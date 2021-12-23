@@ -50,7 +50,12 @@ void set(S * a, S * b) {
 
 void print_S(S * a) {
 	for(int i = a -> size; i >= 0; i --) {
-		printf("%u", a -> A[i]);
+		if(i == a -> size) {
+			printf("%u", a -> A[i]);
+		}
+		else {
+			printf("%09u", a -> A[i]);
+		}
 	}
 }
 
